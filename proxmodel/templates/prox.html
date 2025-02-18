@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,tr,td{
+            border:1px solid black
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <h3>ExamCenter Informations</h3>
+        <th>Id</th>
+        <th>Exam Center Name</th>
+        <th>Center City</th>
+        {% for student in examcenters %}
+        <tr>
+            <td>{{student.id}}</td>
+            <td>{{student.cname}}</td>
+            <td>{{student.city}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <table>
+        <h3>My Proxy ExamCenter Informations</h3>
+        <th>Id</th>
+        <th>MY Exam Center Name</th>
+        <th>Center City</th>
+        {% for students in myexamcenters %}
+        <tr>
+            <td>{{students.id}}</td>
+            <td>{{students.cname}}</td>
+            <td>{{students.city}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
