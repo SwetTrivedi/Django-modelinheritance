@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'school',
     'exam',
     'proxmodel',
+    'modelmanager',
 ]
 
 MIDDLEWARE = [

@@ -18,8 +18,10 @@ from django.contrib import admin
 from django.urls import path
 from school import views 
 from proxmodel import views as v
+from modelmanager import views as v1
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home),
+    # path('',views.home),
     # path('',v.prox),
+    path('',v1.college),
 ]
